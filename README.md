@@ -18,7 +18,8 @@ frontend web development.
 
 ## Preview
 
-![Website Preview](images/ludo.png)
+![Website Preview]
+<img width="1087" height="1112" alt="ludo" src="https://github.com/user-attachments/assets/7e71c412-bc94-453d-b387-8dd6af920dfe" />
 
 ## Features
 

@@ -1,0 +1,519 @@
+*{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 200;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* this is for full frame window for ludo dashboard layout */
+.main-frame{
+    /* background: #f8aadb; */
+    background: linear-gradient(rgba(116, 212, 208, 0.5), rgba(204, 74, 74, 0.5)),  url("Back.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 830px;
+    height: 830px;
+    border: 2px solid rgb(213, 213, 240);
+    margin-left: 60px;
+}
+.main{
+    background-color: #ffcded;
+    width: 783px;
+    height: 783px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+h1{
+    font-weight: 400;
+    text-align: center;
+    text-shadow: #1010cf;
+}
+
+/* three columns */
+#red{
+    background-color: rgb(240, 36, 36);
+    width: 261px;
+    height: 783px;
+    float: left;
+}
+#white{
+    background-color: #f5f3f3;
+    width: 261px;
+    height: 783px;
+    float: left;
+}
+#green{
+    background-color: #04bd04;
+    width: 261px;
+    height: 783px;
+    float: left;
+}
+
+/* squares of first column */
+#hor1{
+    background-color: rgb(240, 36, 36);
+    width: 261px;
+    height: 261px;
+    border: 1px solid black;
+}
+#hor2{
+    background-color: #f5f3f3;
+    width: 261px;
+    height: 261px;
+}
+#hor3{
+    background-color: #1010cf;
+    width: 261px;
+    height: 261px;
+    border: 1px solid black;
+}
+/* squares of third column */
+#hor12{
+    background-color: rgb(2, 153, 2);
+    width: 261px;
+    height: 261px;
+    border: 1px solid black;
+}
+#hor22{
+    background-color: #f5f3f3;
+    width: 261px;
+    height: 261px;
+}
+#hor32{
+    background-color: #fffb08;
+    width: 261px;
+    height: 261px;
+    border: 1px solid black;
+}
+
+/* squares of second column */
+#hor13{
+    background-color: #f5f3f3;
+    width: 261px;
+    height: 261px;
+}
+#hor23{
+    background-color: #f5f3f3;
+    width: 261px;
+    height: 261px;
+    border: 1px solid black;
+    float: left;
+}
+#hor33{
+    background-color: #f5f3f3;
+    width: 261px;
+    height: 261px;
+    float: left;
+}
+
+/* white-band design inside every square blocks */
+.white-band{
+    background-color: #fff;
+    width: 220px;
+    height: 220px;
+    margin: 20px;
+}
+.four-white-bands-red{
+    background-color: red;
+    width: 70px;
+    height: 70px;
+    margin: 20px 20px 20px 20px;
+    padding: 20px;
+    float: left;
+    border: 1px solid gray;
+}
+.four-white-bands-green{
+    background-color: rgb(29, 197, 7);
+    width: 70px;
+    height: 70px;
+    margin: 20px 20px 20px 20px;
+    padding: 20px;
+    float: left;
+    border: 1px solid gray;
+}
+.four-white-bands-yellow{
+    background-color: rgb(222, 245, 12);
+    width: 70px;
+    height: 70px;
+    margin: 20px 20px 20px 20px;
+    padding: 20px;
+    float: left;
+    border: 1px solid gray;
+}
+.four-white-bands-blue{
+    background-color: rgb(13, 4, 136);
+    width: 70px;
+    height: 70px;
+    margin: 20px 20px 20px 20px;
+    padding: 20px;
+    float: left;
+    border: 1px solid gray;
+}
+
+/* this will be the six-square-first-column grid */
+.six-square-first-column{
+    width: 43.5px;
+    height: 261px;
+    border-right: 2px solid black;
+    float: left;
+}
+
+/* this is for red only------- */
+#square-grid1-up{
+    width: 43px;
+    height: 86px;
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+}
+#square-grid2-up{
+    width: 43px;
+    height: 86px;
+    background-color: red;
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+}
+#square-grid1-middle{
+    width: 43px;
+    height: 86px;
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;  
+}
+#square-grid2-middle{
+    width: 43px;
+    height: 86px;
+    background-color: red;
+    border-bottom: 1px solid black;
+    border-right: 1px solid black; 
+}
+#square-grid-down{
+    width: 43px;
+    height: 90px;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+}
+/* this is for yellow only-------- */
+#square-grid1-up-yellow-1{
+    width: 43px;
+    height: 86px;
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+}
+#square-grid1-up-yellow{
+    width: 43px;
+    height: 86px;
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+}
+#square-grid-middle-yellow-1{
+    width: 43px;
+    height: 90px;
+    background-color: yellow;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+}
+#square-grid-middle-yellow{
+    width: 43px;
+    height: 90px;
+    background-color: yellow;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+}
+#square-grid-middle-yellow1{
+    width: 43px;
+    height: 90px;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+}
+#square-grid-down-yellow{
+    width: 43px;
+    height: 85px;
+}
+#square-grid-down-yellow-5{
+    width: 43px;
+    height: 85px;
+    background-color: yellow;
+    border-right: 1px solid black;
+}
+
+/* this is for green-box-layout only----------- */
+#green-box-layout-one{
+    width: 87px;
+    height: 261px;
+    border-right: 1px solid black;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    float: left;
+}
+#green-box-layout-two{
+    width: 87px;
+    height: 261px;
+    border-right: 1px solid black;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    float: left;
+}
+#green-box-layout-three{
+    width: 87px;
+    height: 261px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    float: left;
+}
+#green-box-layout-one-squares{
+    width: 87px;
+    height: 43.5px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+#green-boxlayout-two-squares-1{
+    width: 87px;
+    height: 43.5px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+#green-boxlayout-two-squares{
+    width: 87px;
+    height: 43.5px;
+    background-color: #04bd04;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+#green-boxlayout-three-squares-1{
+    width: 87px;
+    height: 43.5px;
+    background-color: #04bd04;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+}
+#green-boxlayout-three-squares{
+    width: 87px;
+    height: 43.5px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+}
+
+/* for blue-box-layout-one only------- */
+#blue-box-layout-one{
+    width: 87px;
+    height: 261px;
+    border-right: 1px solid black;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    float: left;
+}
+#blue-box-layout-two{
+    width: 87px;
+    height: 261px;
+    border-right: 1px solid black;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    float: left;
+}
+#blue-box-layout-three{
+    width: 87px;
+    height: 261px;
+    border-right: 1px solid black;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    float: left;
+}
+#blue-box-layout-one-squares{
+    width: 87px;
+    height: 43.5px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+}
+#blue-box-layout-one-squares-1{
+    width: 87px;
+    height: 43.5px;
+    background-color: #1010cf;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+}
+#blue-box-layout-two-squares{
+    width: 87px;
+    height: 43.5px;
+    background-color: #1010cf ;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+}
+#blue-box-layout-two-squares-1{
+    width: 87px;
+    height: 43.5px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+}
+#blue-box-layout-three-squares{
+    width: 87px;
+    height: 43.5px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+}
+
+/* all star images for strike-----------stop--------- */
+ #container-1{
+    height: 70px;
+    width: 70px;
+    margin: 8px;
+    background-image: url("home.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#container-2{
+    height: 50px;
+    width: 40px;
+    background-image: url("star.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#container-3{
+    height: 50px;
+    width: 40px;
+    background-image: url("star.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#container-4{
+    height: 50px;
+    width: 40px;
+    margin-left: 40px;
+    background-image: url("star.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#container-5{
+    height: 45px;
+    width: 45px;
+    background-image: url("star.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#container-6{
+    height: 50px;
+    width: 50px;
+    margin-left: 16px;
+    background-image: url("star.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#container-7{
+    height: 45px;
+    width: 45px;
+    background-image: url("star.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#container-8{
+    height: 50px;
+    width: 50px;
+    margin-left: 10px;
+    background-image: url("star.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#container-9{
+    height: 45px;
+    width: 45px;
+    background-image: url("star.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* this is for senter - home for ludo */
+#center-one{
+    width: 261px;
+    height: 87px;
+    float: left;
+}
+#center-two{
+    width: 261px;
+    height: 87px;
+    background-color: #8cbd04;
+    float: left;
+}
+#center-three{
+    width: 261px;
+    height: 87px;
+    background-color: #04bd04;
+    float: left;
+}
+#center-cell-one{
+    width: 87px;
+    height: 87px;
+    float: left;
+    background-color: #fffb00;
+}
+#center-cell-two{
+    width: 87px;
+    height: 87px;
+    float: left;
+    background-color: #fffb00;
+}
+#center-cell-three{
+    width: 87px;
+    height: 87px;
+    float: left;
+    background-color: #0206ff;
+}
+#center-cell-two-one{
+    width: 87px;
+    height: 87px;
+    float: left;
+    background-color: #07d619;
+}
+#center-cell-two-two{
+    width: 87px;
+    height: 87px;
+    float: left;
+    background-color: #f1f1f1;
+}
+#center-cell-two-three{
+    width: 87px;
+    height: 87px;
+    float: left;
+    background-color: #0206ff;
+}
+#center-cell-three-one{
+    width: 87px;
+    height: 87px;
+    float: left;
+    background-color: #07d619;
+}
+#center-cell-three-two{
+    width: 87px;
+    height: 87px;
+    float: left;
+    background-color: #ff0000;
+}
+#center-cell-three-three{
+    width: 87px;
+    height: 87px;
+    float: left;
+    background-color: #ff0000;
+}
